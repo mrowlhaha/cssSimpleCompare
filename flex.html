@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      header {
+        display: flex;
+        background-color: #333;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo img {
+        max-width: 100%;
+        height: 40px;
+      }
+      .nav {
+        display: flex;
+        color: #fff;
+        margin-left: auto;
+        padding: 8px;
+      }
+      .content {
+        margin-top: 10px;
+        display: flex;
+        width: 800px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      aside {
+        background-color: aquamarine;
+        width: 150px;
+      }
+      main {
+        background-color: aqua;
+        width: auto;
+        flex-grow: 1;
+      }
+      .ac {
+        background-color: #ddd;
+        width: 150px;
+      }
+      .listCard {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+      }
+      .listCard .x {
+        margin-right: -12px;
+
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .listCard .x div {
+        background-color: aqua;
+        width: 191px;
+        height: 191px;
+        margin-right: 12px;
+        margin-bottom: 10px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://static.xiedaimala.com/xdml/image/b3698b08-cb48-4606-98e2-70a1159a4db7/2020-10-24-15-13-17.png?imageslim|imageView2/1/w/400/h/400"
+          alt="我的logo"
+        />
+      </div>
+
+      <ul class="nav">
+        <li>首页</li>
+        <li>课程</li>
+        <li>关于</li>
+        <li>优惠</li>
+      </ul>
+    </header>
+
+    <div class="content">
+      <aside>
+        <ul>
+          <li>这是第1个li</li>
+          <li>这是第2个li</li>
+          <li>这是第3个li</li>
+          <li>这是第4个li</li>
+          <li>这是第5个li</li>
+        </ul>
+      </aside>
+      <main></main>
+      <div class="ac"></div>
+    </div>
+
+    <div class="listCard">
+      <div class="x">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      .nav > li {
+        list-style: none;
+        float: left;
+        padding: 10px;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .logo {
+        float: left;
+      }
+      .logo > img {
+        max-width: 100%;
+        height: 40px;
+      }
+      .nav {
+        float: right;
+      }
+      header {
+        display: block;
+        background-color: gray;
+        color: white;
+      }
+      .content {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+        height: 300px;
+      }
+      .content > aside {
+        float: left;
+        height: 300px;
+        background-color: aqua;
+        width: 200px;
+      }
+      .content > main {
+        float: left;
+        height: 300px;
+        background-color: #ddd;
+        width: 500px;
+      }
+      .content > .ac {
+        float: left;
+        height: 300px;
+        width: 100px;
+        background-color: #000;
+      }
+      .listCard {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 800px;
+        height: 300px;
+      }
+      .listCard > .x {
+        margin-right: -12px;
+        margin-bottom: -12px;
+      }
+      .listCard > .x > div {
+        float: left;
+        margin-right: 12px;
+        margin-bottom: 12px;
+        background-color: aqua;
+        width: 191px;
+        height: 191px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="clearfix">
+      <div class="logo">
+        <img
+          src="https://static.xiedaimala.com/xdml/image/b3698b08-cb48-4606-98e2-70a1159a4db7/2020-10-24-15-13-17.png?imageslim|imageView2/1/w/400/h/400"
+          alt="我的logo"
+        />
+      </div>
+
+      <ul class="clearfix nav">
+        <li>首页</li>
+        <li>课程</li>
+        <li>关于</li>
+        <li>优惠</li>
+      </ul>
+    </header>
+
+    <div class="content clearfix">
+      <aside>
+        <ul>
+          <li>这是第1个li</li>
+          <li>这是第2个li</li>
+          <li>这是第3个li</li>
+          <li>这是第4个li</li>
+          <li>这是第5个li</li>
+        </ul>
+      </aside>
+      <main></main>
+      <div class="ac"></div>
+    </div>
+
+    <div class="listCard">
+      <div class="x clearfix">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>

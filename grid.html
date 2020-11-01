@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .demo {
+        display: grid;
+        grid-template-rows: 120px repeat(4, 60px);
+        grid-template-columns: 120px 120px;
+        grid-template-areas:
+          "big mid1"
+          "big mid2"
+          "sm1 mid2"
+          "sm2 mid3"
+          "sm3 mid3";
+      }
+      .images:nth-child(1) {
+        grid-area: big;
+        background-color: aqua;
+      }
+      .images:nth-child(2) {
+        grid-area: mid1;
+        background-color: #ff7;
+      }
+      .images:nth-child(3) {
+        grid-area: mid2;
+        background-color: #f7f;
+      }
+      .images:nth-child(4) {
+        grid-area: mid3;
+        background-color: #0da;
+      }
+      .images:nth-child(5) {
+        grid-area: sm1;
+        background-color: #f08;
+      }
+      .images:nth-child(6) {
+        grid-area: sm2;
+        background-color: #f80;
+      }
+      .images:nth-child(7) {
+        grid-area: sm3;
+        background-color: #208;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo">
+      <div class="images bigImage"></div>
+      <div class="images middleImage"></div>
+      <div class="images middleImage"></div>
+      <div class="images middleImage"></div>
+      <div class="images smallImages"></div>
+      <div class="images smallImages"></div>
+      <div class="images smallImages"></div>
+    </div>
+  </body>
+</html>
